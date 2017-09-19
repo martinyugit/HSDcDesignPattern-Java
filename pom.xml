@@ -112,4 +112,10 @@
 			<artifactId>slf4j-log4j12</artifactId>
 		</dependency>
 	</dependencies>
+	<modules>
+		<module>design-pattern-service</module>
+		<module>design-pattern-web</module>
+		<module>design-pattern-intf</module>
+		<module>design-pattern-persist</module>
+	</modules>
 </project>
