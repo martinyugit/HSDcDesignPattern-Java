@@ -8,7 +8,7 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
 		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-	<beans:import resource="classpath*:META-INF/spring/app-context.xml" />
+	<!-- <beans:import resource="classpath*:META-INF/spring/app-context.xml" /> -->
 	<!-- DispatcherServlet Context: defines this servlet's request-processing 
 		infrastructure -->
 
@@ -30,7 +30,7 @@
 		<beans:property name="definitions" value="/WEB-INF/tiles.xml" />
 	</beans:bean>
 
-	<context:component-scan base-package="com.hsdc.designpattern.web" />
+	<context:component-scan base-package="com.hsdc.dp.web" />
 
 	<beans:bean id="localeResolver"
 		class="org.springframework.web.servlet.i18n.SessionLocaleResolver">
