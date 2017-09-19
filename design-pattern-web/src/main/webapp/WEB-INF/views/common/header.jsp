@@ -20,7 +20,7 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Creational Pattern</a>
             <ul class="dropdown-menu">
-              <li><a href="#">Builder Pattern</a></li>
+              <li><a href="${pageContext.request.contextPath }/bd">Builder Pattern</a></li>
               <li><a href="#">Factory Method Pattern</a></li>
               <li><a href="#">Prototype Pattern</a></li>
               <li><a href="#">Singleton Pattern</a></li>

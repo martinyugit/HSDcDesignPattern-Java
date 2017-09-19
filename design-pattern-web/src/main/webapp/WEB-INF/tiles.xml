@@ -13,4 +13,16 @@
     <definition name="home" extends="basic.definition">
         <put-attribute name="body" value="/WEB-INF/views/home.jsp" />
     </definition>
+    
+    <!-- Builder Begin -->
+    <definition name="bdindex" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/builder/selectForm.jsp" />
+    </definition>
+    <definition name="newleave" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/builder/leaveForm.jsp" />
+    </definition>
+    <definition name="leaveresult" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/builder/leaveResult.jsp" />
+    </definition>
+    <!-- Builder End -->
 </tiles-definitions>
