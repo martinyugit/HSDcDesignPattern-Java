@@ -28,6 +28,7 @@ public class IDGeneratorSingleton {
         }*/
         if (!idCounter.containsKey(key))
         	idCounter.put(key, currentId);
+        currentId = idCounter.get(key);
         currentId += 1;
         idCounter.put(key, currentId);
         return key.getFormDateStr() + String.format("%04d",currentId);
