@@ -48,4 +48,12 @@ public class BuilderController {
 		model.addAttribute("form", form);
 		return "newapplyexp";
 	}
+	
+	@Autowired @Qualifier("saveApplyExpenseUcoImpl") private SaveEOfficeUco<ApplyExpense> aeUco;
+	@RequestMapping(value = "/bd/nae", method = RequestMethod.POST)
+	public String saveApplyExpense(@ModelAttribute("form")ApplyExpense ae, Model model) {
+		ae = aeUco.save(ae);
+		model.addAttribute("o", ae);
+		return "aeresult";
+	}
 }

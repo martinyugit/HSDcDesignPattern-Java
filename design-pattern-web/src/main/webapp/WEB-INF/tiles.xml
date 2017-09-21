@@ -24,5 +24,35 @@
     <definition name="leaveresult" extends="basic.definition">
         <put-attribute name="body" value="/WEB-INF/views/builder/leaveResult.jsp" />
     </definition>
+    <definition name="newapplyexp" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/builder/applyExpenseForm.jsp" />
+    </definition>
+    <definition name="aeresult" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/builder/applyExpenseResult.jsp" />
+    </definition>
     <!-- Builder End -->
+    
+     <!-- Prototype Begin -->
+    <definition name="ptindex" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/prototype/selectForm.jsp" />
+    </definition>
+    <definition name="rflist" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/prototype/ringleFrameworkList.jsp" />
+    </definition>
+    <definition name="rfadd" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/prototype/ringleFramewokForm.jsp" />
+    </definition>
+    <definition name="relist" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/prototype/ringleErpList.jsp" />
+    </definition>
+    <definition name="recpy" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/prototype/ringleErpCopy.jsp" />
+    </definition>
+    <!-- Prototype End -->
+    
+    <!-- Singleton Begin -->
+    <definition name="sgindex" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/singleton/formSingleton.jsp" />
+    </definition>
+    <!-- Singleton End -->
 </tiles-definitions>
