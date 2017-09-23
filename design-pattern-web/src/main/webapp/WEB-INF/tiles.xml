@@ -55,4 +55,10 @@
         <put-attribute name="body" value="/WEB-INF/views/singleton/formSingleton.jsp" />
     </definition>
     <!-- Singleton End -->
+    
+    <!-- Bridge Begin -->
+    <definition name="bgindex" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/bridge/trackProgress.jsp" />
+    </definition>
+    <!-- Bridge End -->
 </tiles-definitions>
