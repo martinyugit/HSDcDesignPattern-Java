@@ -31,7 +31,7 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Strutural Pattern</a>
             <ul class="dropdown-menu">
               <li><a href="${pageContext.request.contextPath }/bg">Bridge Pattern</a></li>
-              <li><a href="#">Composite Pattern</a></li>
+              <li><a href="${pageContext.request.contextPath }/cp">Composite Pattern</a></li>
               <li><a href="#">Decorator Pattern</a></li>
               <li><a href="#">Flyweight Pattern</a></li>
               

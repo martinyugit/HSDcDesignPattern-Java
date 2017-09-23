@@ -61,4 +61,10 @@
         <put-attribute name="body" value="/WEB-INF/views/bridge/trackProgress.jsp" />
     </definition>
     <!-- Bridge End -->
+    
+    <!-- Composite Begin -->
+    <definition name="cpindex" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/composite/queryEmployee.jsp" />
+    </definition>
+    <!-- Composite End -->
 </tiles-definitions>
