@@ -12,6 +12,11 @@ public class IDGeneratorSingleton {
 	private Map<Form, Integer> idCounter;
 	
 	private IDGeneratorSingleton() {
+		//HashMap is not thread safe
+		//thread safe use : https://yemengying.com/2016/05/07/threadsafe-hashmap/
+			//		Hashtable
+			//	v	ConcurrentHashMap
+			//		Synchronized Map
 		 this.idCounter = new HashMap<Form, Integer>();
 	}
 	
