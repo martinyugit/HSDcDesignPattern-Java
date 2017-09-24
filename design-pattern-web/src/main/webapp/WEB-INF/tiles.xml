@@ -67,4 +67,16 @@
         <put-attribute name="body" value="/WEB-INF/views/composite/queryEmployee.jsp" />
     </definition>
     <!-- Composite End -->
+    
+    <!-- Decorator Begin -->
+    <definition name="decindex" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/decorator/userLogin.jsp" />
+    </definition>
+    <!-- Decorator End -->
+    
+    <!-- Flyweight Begin -->
+    <definition name="fwindex" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/flyweight/areaSelection.jsp" />
+    </definition>
+    <!-- Flyweight End -->
 </tiles-definitions>

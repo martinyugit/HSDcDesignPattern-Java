@@ -32,8 +32,8 @@
             <ul class="dropdown-menu">
               <li><a href="${pageContext.request.contextPath }/bg">Bridge Pattern</a></li>
               <li><a href="${pageContext.request.contextPath }/cp">Composite Pattern</a></li>
-              <li><a href="#">Decorator Pattern</a></li>
-              <li><a href="#">Flyweight Pattern</a></li>
+              <li><a href="${pageContext.request.contextPath }/dec">Decorator Pattern</a></li>
+              <li><a href="${pageContext.request.contextPath }/fw">Flyweight Pattern</a></li>
               
             </ul>
           </li>
