@@ -35,7 +35,8 @@ public class IDGeneratorSingleton {
         	idCounter.put(key, currentId);
         currentId = idCounter.get(key);
         currentId += 1;
-        idCounter.put(key, currentId);
+        
+		idCounter.put(key, currentId);
         return key.getFormDateStr() + String.format("%04d",currentId);
     }
 
