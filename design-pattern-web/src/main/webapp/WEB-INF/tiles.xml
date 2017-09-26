@@ -79,4 +79,10 @@
         <put-attribute name="body" value="/WEB-INF/views/flyweight/areaSelection.jsp" />
     </definition>
     <!-- Flyweight End -->
+    
+    <!-- Command Begin -->
+    <definition name="cmdindex" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/command/calculatorForm.jsp" />
+    </definition>
+    <!-- Command End -->
 </tiles-definitions>
