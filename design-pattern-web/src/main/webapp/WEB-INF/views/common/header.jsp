@@ -41,7 +41,7 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Behavioural Pattern</a>
             <ul class="dropdown-menu">
               <li><a href="${pageContext.request.contextPath }/cmd">Command Pattern</a></li>
-              <li><a href="#">Interpreter Pattern</a></li>
+              <li><a href="${pageContext.request.contextPath }/it">Interpreter Pattern</a></li>
               <li><a href="#">Iterator Pattern</a></li>
               <li><a href="#">Mediator Pattern</a></li>
               <li><a href="#">Template Method Pattern</a></li>

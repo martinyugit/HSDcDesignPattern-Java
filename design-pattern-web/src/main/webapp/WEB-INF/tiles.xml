@@ -85,4 +85,10 @@
         <put-attribute name="body" value="/WEB-INF/views/command/calculatorForm.jsp" />
     </definition>
     <!-- Command End -->
+    
+    <!-- Interpreter Begin -->
+    <definition name="itindex" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/interpreter/chineseTransformer.jsp" />
+    </definition>
+    <!-- Interpreter End -->
 </tiles-definitions>
