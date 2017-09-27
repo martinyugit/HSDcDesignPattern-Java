@@ -1,11 +1,13 @@
 package com.hsdc.dp.service.domain.prototype;
 
+import static org.mockito.Mockito.RETURNS_DEEP_STUBS;
+
 import java.math.BigDecimal;
 
-import com.hsdc.dp.intf.domain.prototype.Prototype;
+import com.hsdc.dp.intf.domain.prototype.ShallowPrototype;
 import com.hsdc.dp.intf.domain.prototype.PurchaseOrderLineItem;
 
- class PurchaseOrderLineItemDo implements Prototype<PurchaseOrderLineItem>, PurchaseOrderLineItem {
+ class PurchaseOrderLineItemDo implements Cloneable, ShallowPrototype<PurchaseOrderLineItem>, PurchaseOrderLineItem {
 
 	/**
 	 * 
@@ -37,7 +39,7 @@ import com.hsdc.dp.intf.domain.prototype.PurchaseOrderLineItem;
 	}
 
 	static PurchaseOrderLineItemDo createInstance() {
-		return getInstance().clone();// new PurchaseOrderLineItemDo();
+		return getInstance().shallowClone();// new PurchaseOrderLineItemDo();
 	}
 
 	public String getProductName() {
@@ -68,8 +70,13 @@ import com.hsdc.dp.intf.domain.prototype.PurchaseOrderLineItem;
 		return calculate();
 	}
 
-	public PurchaseOrderLineItemDo clone() {
-		return new PurchaseOrderLineItemDo();
+	public PurchaseOrderLineItemDo shallowClone() {
+		try {
+			return (PurchaseOrderLineItemDo) this.clone();
+		} catch (CloneNotSupportedException e) {
+			e.printStackTrace();
+			return null;
+		}
 	}
 	
 	private BigDecimal calculate() {

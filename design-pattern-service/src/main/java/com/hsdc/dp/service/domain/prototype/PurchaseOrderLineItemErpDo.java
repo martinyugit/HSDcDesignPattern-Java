@@ -5,12 +5,15 @@ import java.math.BigDecimal;
 import com.hsdc.dp.intf.domain.prototype.DeepPrototype;
 import com.hsdc.dp.intf.domain.prototype.PurchaseOrderLineItem;
 
- class PurchaseOrderLineItemErpDo implements DeepPrototype<PurchaseOrderLineItem>, PurchaseOrderLineItem {
+ class PurchaseOrderLineItemErpDo implements Cloneable, DeepPrototype<PurchaseOrderLineItem>, PurchaseOrderLineItem {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 4770654177702063422L;
+
+	private static final Object lock = new Object();
+	private static volatile PurchaseOrderLineItemErpDo instance;
 	
 	private String productName;
 	private int quantity;
@@ -18,9 +21,23 @@ import com.hsdc.dp.intf.domain.prototype.PurchaseOrderLineItem;
 	
 	private PurchaseOrderLineItemErpDo() {
 	}
+
+	private static PurchaseOrderLineItemErpDo getInstance() {
+		PurchaseOrderLineItemErpDo r = instance;
+	    if (r == null) {
+	        synchronized (lock) {    // While we were waiting for the lock, another 
+	            r = instance;        // thread may have instantiated the object.
+	            if (r == null) {  
+	                r = new PurchaseOrderLineItemErpDo();
+	                instance = r;
+	            }
+	        }
+	    }
+	    return r;
+	}
 	
 	static PurchaseOrderLineItemErpDo createInstance() {
-		return new PurchaseOrderLineItemErpDo();
+		return getInstance().deepClone();
 	}
 
 	public String getProductName() {
@@ -55,17 +72,19 @@ import com.hsdc.dp.intf.domain.prototype.PurchaseOrderLineItem;
 		return this.price.multiply(new BigDecimal(quantity));
 	}
 
-	public PurchaseOrderLineItem cloneDeep() {
-		return (PurchaseOrderLineItem)clone();
-	}
-	
-	@Override
-	public Object clone() {
-		PurchaseOrderLineItem newItem = new PurchaseOrderLineItemErpDo();
-		newItem.setProductName(this.productName);
-		newItem.setPrice(this.price);
-		newItem.setQuantity(this.quantity);
-		return newItem;
+	public PurchaseOrderLineItemErpDo deepClone() {
+		PurchaseOrderLineItemErpDo newItem;
+		try {
+			newItem = (PurchaseOrderLineItemErpDo) this.clone();
+			newItem.setProductName(this.productName);
+			newItem.setPrice(this.price);
+			newItem.setQuantity(this.quantity);
+			return newItem;
+		} catch (CloneNotSupportedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return null;
+		}
 	}
 
 }

@@ -34,7 +34,7 @@ public class PrototypeController {
 	
 	@RequestMapping(value="/pt/rfa", method = RequestMethod.POST)
 	public String save(@ModelAttribute("form")SingleStringForm form, Model model) {
-		PurchaseOrder newPo = muco.newPurchaseOrder().clone();
+		PurchaseOrder newPo = muco.newPurchaseOrder().shallowClone();
 		newPo.setCustomerName(form.getCustName());
 		model.addAttribute("polist", muco.save(newPo));
 		return "rflist";

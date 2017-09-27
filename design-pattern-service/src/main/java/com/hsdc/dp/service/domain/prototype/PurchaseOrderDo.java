@@ -6,12 +6,12 @@ import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.hsdc.dp.intf.domain.prototype.Prototype;
+import com.hsdc.dp.intf.domain.prototype.ShallowPrototype;
 import com.hsdc.dp.intf.domain.prototype.PurchaseOrder;
 import com.hsdc.dp.intf.domain.prototype.PurchaseOrderLineItem;
 import com.hsdc.dp.service.singleton.IDGeneratorSingleton;
 
- class PurchaseOrderDo implements Prototype<PurchaseOrder>, PurchaseOrder {
+ class PurchaseOrderDo implements Cloneable, ShallowPrototype<PurchaseOrder>, PurchaseOrder {
 
 	/**
 	 * 
@@ -44,7 +44,7 @@ import com.hsdc.dp.service.singleton.IDGeneratorSingleton;
 	}
 
 	static PurchaseOrderDo createInstance() {
-		return getInstance().clone();// new PurchaseOrderDo();
+		return getInstance().shallowClone();// new PurchaseOrderDo();
 	}
 	
 	void setPurchaseOrderLineItem(List<PurchaseOrderLineItem> items) {
@@ -83,9 +83,14 @@ import com.hsdc.dp.service.singleton.IDGeneratorSingleton;
         	subTotal = subTotal.add(i.getSubTotal());
         return subTotal.round(new MathContext(4, RoundingMode.HALF_UP));
 	}
-
-	public PurchaseOrderDo clone() {
-		return new PurchaseOrderDo();
+	
+	public PurchaseOrderDo shallowClone() {
+		try {
+			return (PurchaseOrderDo) this.clone();
+		} catch (CloneNotSupportedException e) {
+			e.printStackTrace();
+			return null;
+		}
 	}
-
+	
 }

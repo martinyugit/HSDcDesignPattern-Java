@@ -6,7 +6,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.hsdc.dp.intf.domain.prototype.Prototype;
+import com.hsdc.dp.intf.domain.prototype.ShallowPrototype;
 import com.hsdc.dp.intf.domain.prototype.PurchaseOrder;
 import com.hsdc.dp.intf.domain.prototype.PurchaseOrderLineItem;
 import com.hsdc.dp.intf.service.prototype.MaintainPurchaseUco;
@@ -51,7 +51,7 @@ public class MaintainPurchaseUcoImpl implements MaintainPurchaseUco {
         return poList;
     }
 
-	public Prototype<PurchaseOrder> newPurchaseOrder() {
+	public ShallowPrototype<PurchaseOrder> newPurchaseOrder() {
 		return PurchaseOrderDo.createInstance();
 	}
 

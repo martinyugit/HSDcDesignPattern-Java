@@ -61,7 +61,7 @@ public class MaintainPurchaseOrderErpUcoImpl implements MaintainPurchaseOrderErp
 				source = po;
 		if (source != null)
         {
-            target = ((DeepPrototype<PurchaseOrder>)source).cloneDeep();
+            target = ((DeepPrototype<PurchaseOrder>)source).deepClone();
             target.setPoNumber( "");
         }
 		return target;
