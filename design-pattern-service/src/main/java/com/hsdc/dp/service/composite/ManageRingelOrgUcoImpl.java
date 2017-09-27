@@ -40,12 +40,14 @@ public class ManageRingelOrgUcoImpl implements ManageRingelOrgUco {
     private OrganizationUnit getAllDepartments()
     {
         OrganizationUnit leaf, comp, root;
+        
         leaf = new OrganizationUnitLeaf();
         leaf.setDepartmentName("資訊課");
         Employee e1 = new Employee("王小明");
         leaf.addEmployee(e1);
         e1 = new Employee("賴阿仁");
         leaf.addEmployee(e1);
+        
         comp = new OrganizationUnitComposite();
         comp.setDepartmentName("行政部");
         e1 = new Employee("趙六");
@@ -55,6 +57,7 @@ public class ManageRingelOrgUcoImpl implements ManageRingelOrgUco {
         e1 = new Employee("孫八");
         comp.addEmployee(e1);
         comp.add(leaf);
+        
         leaf = new OrganizationUnitLeaf();
         leaf.setDepartmentName("人資課");
         e1 = new Employee("趙守志");
@@ -62,6 +65,7 @@ public class ManageRingelOrgUcoImpl implements ManageRingelOrgUco {
         e1 = new Employee("吳人來");
         leaf.addEmployee(e1);
         comp.add(leaf);
+        
         root = new OrganizationUnitComposite();
         root.setDepartmentName("總經理室");
         e1 = new Employee("王一");
@@ -69,6 +73,7 @@ public class ManageRingelOrgUcoImpl implements ManageRingelOrgUco {
         e1 = new Employee( "王二");
         root.addEmployee(e1);
         root.add(comp);
+        
         leaf = new OrganizationUnitLeaf();
         leaf.setDepartmentName("出納課");
         e1 = new Employee("錢出去");
