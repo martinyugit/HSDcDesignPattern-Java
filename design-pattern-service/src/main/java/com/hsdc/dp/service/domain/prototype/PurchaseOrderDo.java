@@ -17,6 +17,9 @@ import com.hsdc.dp.intf.domain.prototype.PurchaseOrderLineItem;
 	 */
 	private static final long serialVersionUID = 3518991452979589166L;
 	
+	private static final Object lock = new Object();
+	private static volatile PurchaseOrderDo instance;
+	
 	private String poNumber;
 	private String customerName;
 	private List<PurchaseOrderLineItem> items = null;
@@ -25,8 +28,22 @@ import com.hsdc.dp.intf.domain.prototype.PurchaseOrderLineItem;
 		items = new ArrayList<PurchaseOrderLineItem>();
 	}
 	
-	static PurchaseOrderDo createInstance() {
-		return new PurchaseOrderDo();
+	public static PurchaseOrderDo getInstance() {
+		PurchaseOrderDo r = instance;
+		
+		if(r == null) {
+			synchronized (lock) {
+				r = instance;
+				
+				if (r == null) {
+					r = new PurchaseOrderDo();
+					instance = r;
+				}
+			}
+		}
+		
+		
+		return r;
 	}
 	
 	void setPurchaseOrderLineItem(List<PurchaseOrderLineItem> items) {
