@@ -91,4 +91,10 @@
         <put-attribute name="body" value="/WEB-INF/views/interpreter/chineseTransformer.jsp" />
     </definition>
     <!-- Interpreter End -->
+    
+    <!-- TemplateMethod Begin -->
+    <definition name="tmindex" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/templatemethod/policyChangeForm.jsp" />
+    </definition>
+    <!-- TemplateMethod End -->
 </tiles-definitions>
