@@ -32,7 +32,7 @@ public class MaintainPurchaseUcoImpl implements MaintainPurchaseUco {
         item.setPrice(new BigDecimal(15.2));
         item.setQuantity(1);
         items.add(item);
-        PurchaseOrderDo po = PurchaseOrderDo.createInstance();
+        PurchaseOrderDo po = PurchaseOrderDo.getInstance();
         po.setCustomerName("Arthur");
         po.setPoNumber("PO010001");
         po.setPurchaseOrderLineItem(items);
@@ -43,7 +43,7 @@ public class MaintainPurchaseUcoImpl implements MaintainPurchaseUco {
         item.setPrice(new BigDecimal(11.5));
         item.setQuantity(1);
         items.add(item);
-        po = PurchaseOrderDo.createInstance();
+        po = PurchaseOrderDo.getInstance();
         po.setCustomerName("Ringle");
         po.setPoNumber("PO010002");
         po.setPurchaseOrderLineItem(items);
@@ -52,11 +52,12 @@ public class MaintainPurchaseUcoImpl implements MaintainPurchaseUco {
     }
 
 	public Prototype<PurchaseOrder> newPurchaseOrder() {
-		return PurchaseOrderDo.createInstance();
+		return PurchaseOrderDo.getInstance();
 	}
 
 	public List<PurchaseOrder> save(PurchaseOrder po) {
 		List<PurchaseOrder> poList = initialData();
+		
         po.setPoNumber("PO010003");
         poList.add(po);
         return poList;
