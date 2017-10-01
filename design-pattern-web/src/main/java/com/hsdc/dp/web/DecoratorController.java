@@ -26,9 +26,9 @@ public class DecoratorController {
 			 @RequestParam("userId") String userId, @RequestParam("password") String password) {
 		UserService userService = new DefaultUserService();
 		if (type.equals("db"))
-			userService = new DbAuthenticationUserService(userService);
+			userService = new AuthorityUserService(new DbAuthenticationUserService(userService));
 		if (type.equals("ldap"))
-			userService = new AuthorityUserService(new LdapAuthenticationUserService(userService));
+			userService = new LdapAuthenticationUserService(new AuthorityUserService(userService));
 		return new ResultDto(userService.login(userId, password), userService.getAclList(userId));
 	}
 }
