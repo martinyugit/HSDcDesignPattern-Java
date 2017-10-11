@@ -11,8 +11,7 @@ class Db {
 	private static final Object lock = new Object();
     private List<Policy> db;
 
-    private Db()
-    {
+    private Db() {
         db = new ArrayList<Policy>();
         db.add(new PolicyImpl("01010001", "健康險1", "Ringle", "Ringle", PolicyType.NORMAL));
         db.add(new PolicyImpl("01010002", "健康險2", "Ringle", "Ringle", PolicyType.HAS_CLAIMED));
