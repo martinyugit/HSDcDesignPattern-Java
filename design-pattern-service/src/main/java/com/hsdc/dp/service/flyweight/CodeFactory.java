@@ -29,8 +29,10 @@ public class CodeFactory {
     {
         if (type.equals("AREA"))
         	return new UncachedCode(type);
-        if (!flyweights.contains(type))
+        if (!flyweights.containsKey(type)) {
         	flyweights.put(type, new CachedCode(type));
+        	System.out.println(flyweights.keySet());
+        }
         return flyweights.get(type);
     }
 }

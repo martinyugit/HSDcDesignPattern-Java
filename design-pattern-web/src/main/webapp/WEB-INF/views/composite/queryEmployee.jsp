@@ -39,6 +39,7 @@ $("#deptId").change(function () {
         data: inputdata,
         async: false,
         success: function (data) {
+        	console.log(data);
             var div = $("#divResult");
             div.empty();
             var html = "<p>所有員工共" + data.results.length + "人</p>";
