@@ -97,4 +97,10 @@
         <put-attribute name="body" value="/WEB-INF/views/templatemethod/policyChangeForm.jsp" />
     </definition>
     <!-- TemplateMethod End -->
+    
+    <!-- FactoryMethod Begin -->
+    <definition name="fmindex" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/templatemethod/selectForm.jsp" />
+    </definition>
+    <!-- FactoryMethod End -->
 </tiles-definitions>

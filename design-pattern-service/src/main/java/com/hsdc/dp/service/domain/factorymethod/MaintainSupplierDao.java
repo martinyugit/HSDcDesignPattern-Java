@@ -4,13 +4,11 @@ import java.util.List;
 
 import com.hsdc.dp.intf.service.factorymethod.Supplier;
 
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
-
 class MaintainSupplierDao extends MaintainJobDao<Supplier> {
 
 	@Override
 	public void create(Supplier obj) {
-		throw new NotImplementedException();
+		throw new RuntimeException("Not implemented");
 	}
 
 	@Override
@@ -20,12 +18,12 @@ class MaintainSupplierDao extends MaintainJobDao<Supplier> {
 
 	@Override
 	public void update(Supplier obj) {
-		throw new NotImplementedException();
+		throw new RuntimeException("Not implemented");
 	}
 
 	@Override
 	public void delete(Supplier obj) {
-		throw new NotImplementedException();
+		throw new RuntimeException("Not implemented");
 	}
 
 }
