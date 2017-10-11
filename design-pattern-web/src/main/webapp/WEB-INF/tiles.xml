@@ -100,7 +100,16 @@
     
     <!-- FactoryMethod Begin -->
     <definition name="fmindex" extends="basic.definition">
-        <put-attribute name="body" value="/WEB-INF/views/templatemethod/selectForm.jsp" />
+        <put-attribute name="body" value="/WEB-INF/views/factorymethod/selectForm.jsp" />
+    </definition>
+    <definition name="fmcustomer" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/factorymethod/maintainCustForm.jsp" />
+    </definition>
+    <definition name="fmsupplier" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/factorymethod/maintainSuppForm.jsp" />
+    </definition>
+    <definition name="fmproduct" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/factorymethod/maintainProdForm.jsp" />
     </definition>
     <!-- FactoryMethod End -->
 </tiles-definitions>
