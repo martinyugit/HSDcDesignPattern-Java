@@ -21,7 +21,7 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Creational Pattern</a>
             <ul class="dropdown-menu">
               <li><a href="${pageContext.request.contextPath }/bd">Builder Pattern</a></li>
-              <li><a href="#">Factory Method Pattern</a></li>
+              <li><a href="${pageContext.request.contextPath }/fm">Factory Method Pattern</a></li>
               <li><a href="${pageContext.request.contextPath }/pt">Prototype Pattern</a></li>
               <li><a href="${pageContext.request.contextPath }/sg">Singleton Pattern</a></li>
               
@@ -32,19 +32,19 @@
             <ul class="dropdown-menu">
               <li><a href="${pageContext.request.contextPath }/bg">Bridge Pattern</a></li>
               <li><a href="${pageContext.request.contextPath }/cp">Composite Pattern</a></li>
-              <li><a href="#">Decorator Pattern</a></li>
-              <li><a href="#">Flyweight Pattern</a></li>
+              <li><a href="${pageContext.request.contextPath }/dec">Decorator Pattern</a></li>
+              <li><a href="${pageContext.request.contextPath }/fw">Flyweight Pattern</a></li>
               
             </ul>
           </li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Behavioural Pattern</a>
             <ul class="dropdown-menu">
-              <li><a href="#">Command Pattern</a></li>
-              <li><a href="#">Interpreter Pattern</a></li>
+              <li><a href="${pageContext.request.contextPath }/cmd">Command Pattern</a></li>
+              <li><a href="${pageContext.request.contextPath }/it">Interpreter Pattern</a></li>
               <li><a href="#">Iterator Pattern</a></li>
-              <li><a href="#">Mediator Pattern</a></li>
-              <li><a href="#">Template Method Pattern</a></li>
+              <li><a href="${pageContext.request.contextPath }/md">Mediator Pattern</a></li>
+              <li><a href="${pageContext.request.contextPath }/tm">Template Method Pattern</a></li>
               
             </ul>
           </li>

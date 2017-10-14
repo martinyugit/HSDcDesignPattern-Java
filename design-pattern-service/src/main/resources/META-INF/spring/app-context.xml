@@ -12,6 +12,15 @@
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 	
-	<!-- <import resource="classpath*:META-INF/spring/app-persist-context.xml" /> -->
+	<import resource="classpath*:META-INF/spring/app-persist-context.xml" />
+	<bean id="tmProperties"
+      class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+  		<property name="locations">
+    	<list>
+      		<value>classpath*:templatemethod.properties</value>
+    	</list>
+  		</property>
+  		<property name="fileEncoding" value="UTF-8"/>
+	</bean>
 	<context:component-scan base-package="com.hsdc.dp.service" />
 </beans>

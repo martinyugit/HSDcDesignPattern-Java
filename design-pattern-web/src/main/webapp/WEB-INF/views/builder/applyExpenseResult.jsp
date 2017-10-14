@@ -32,7 +32,22 @@
 					</tr>
 				</table>
 				<br />
-				<br />
+
+			<table class="table-bordered">
+				<tr>
+					<th>OccureDate</th>
+					<th>Expense</th>
+				</tr>
+				<c:forEach var="pod" items="${o.lineItems}">
+					<tr>
+						<td><fmt:formatDate pattern="yyyy-MM-dd" value="${pod.occureDate}" /></td>
+						<td>${pod.expense}</td>
+					</tr>
+				</c:forEach>
+
+			</table>
+
+			<br />
 		</div>
 	</div>
 </div>
