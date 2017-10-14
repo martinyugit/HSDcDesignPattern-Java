@@ -15,6 +15,7 @@
     <option value="-">請選擇</option>
     <option value="PolicyLoan">保單借款</option>
     <option value="ChangeInsuredName">更改被保人姓名</option>
+    <option value="ChangeAddress">更改地址</option>
 </select>
 
 <div id="policyList" style="display:none">
