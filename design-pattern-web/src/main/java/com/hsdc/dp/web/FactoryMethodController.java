@@ -14,6 +14,7 @@ import com.hsdc.dp.intf.service.factorymethod.Supplier;
 import com.hsdc.dp.service.domain.factorymethod.MaintainCustomerUco;
 import com.hsdc.dp.service.domain.factorymethod.MaintainProductUco;
 import com.hsdc.dp.service.domain.factorymethod.MaintainSupplierUco;
+import com.hsdc.dp.service.domain.factorymethod.MaintainUcoCreator;
 
 @Controller
 public class FactoryMethodController {
@@ -24,7 +25,7 @@ public class FactoryMethodController {
 	
 	@RequestMapping(value = "/fm/cust", method = RequestMethod.GET)
 	public String queryCustomers(Model model) {
-		MaintainCustomerUco uco = new MaintainCustomerUco();
+		MaintainUcoCreator<Customer> uco = new MaintainCustomerUco();
         List<Customer> customers = uco.listAll();
         model.addAttribute("customers", customers);
 		return "fmcustomer";
@@ -42,7 +43,7 @@ public class FactoryMethodController {
 	
 	@RequestMapping(value = "/fm/supp", method = RequestMethod.GET)
 	public String querySuppliers(Model model) {
-		MaintainSupplierUco uco = new MaintainSupplierUco();
+		MaintainUcoCreator<Supplier> uco = new MaintainSupplierUco();
         List<Supplier> suppliers = uco.listAll();
         model.addAttribute("suppliers", suppliers);
 		return "fmsupplier";
@@ -60,7 +61,7 @@ public class FactoryMethodController {
 	
 	@RequestMapping(value = "/fm/prod", method = RequestMethod.GET)
 	public String queryProducts(Model model) {
-		MaintainProductUco uco = new MaintainProductUco();
+		MaintainUcoCreator<Product> uco = new MaintainProductUco();
         List<Product> products = uco.listAll();
         model.addAttribute("products", products);
 		return "fmproduct";

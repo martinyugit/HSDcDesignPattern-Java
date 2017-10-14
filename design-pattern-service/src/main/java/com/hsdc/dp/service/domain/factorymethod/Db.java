@@ -26,7 +26,7 @@ class Db {
         suppliers.add(new Supplier("SUPP002", "Microsfot", "yyyy@microsoft.com" ));
         products = new ArrayList<Product>();
         products.add(new Product("PROD001" , "Enterprise Architect Corporate Edition" , "Software" , new BigDecimal(10000) , false ));
-        products.add(new Product("PROD002", "Visual Studtio 2013 Ultimate Edition", "Software", new BigDecimal(200000 ), false ));
+        products.add(new Product("PROD002", "Visual Studtio 2013 Ultimate Edition", "Software", new BigDecimal(200000 ), true ));
         products.add(new Product("PROD003", "HSDc Sequece Plugin", "Software", new BigDecimal(3500) , false ));
         products.add(new Product("PROD004", "HSDc Workflow Engine", "Open Source", BigDecimal.ZERO , false));
         products.add(new Product("PROD005", "Borland Together", "Software", new BigDecimal(180000), true));
