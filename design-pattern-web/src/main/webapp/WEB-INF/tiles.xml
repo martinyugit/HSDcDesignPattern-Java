@@ -67,4 +67,67 @@
         <put-attribute name="body" value="/WEB-INF/views/composite/queryEmployee.jsp" />
     </definition>
     <!-- Composite End -->
+    
+    <!-- Decorator Begin -->
+    <definition name="decindex" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/decorator/userLogin.jsp" />
+    </definition>
+    <!-- Decorator End -->
+    
+    <!-- Flyweight Begin -->
+    <definition name="fwindex" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/flyweight/areaSelection.jsp" />
+    </definition>
+    <!-- Flyweight End -->
+    
+    <!-- Command Begin -->
+    <definition name="cmdindex" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/command/calculatorForm.jsp" />
+    </definition>
+    <!-- Command End -->
+    
+    <!-- Interpreter Begin -->
+    <definition name="itindex" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/interpreter/chineseTransformer.jsp" />
+    </definition>
+    <!-- Interpreter End -->
+    
+    <!-- TemplateMethod Begin -->
+    <definition name="tmindex" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/templatemethod/policyChangeForm.jsp" />
+    </definition>
+    <!-- TemplateMethod End -->
+    
+    <!-- FactoryMethod Begin -->
+    <definition name="fmindex" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/factorymethod/selectForm.jsp" />
+    </definition>
+    <definition name="fmcustomer" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/factorymethod/maintainCustForm.jsp" />
+    </definition>
+    <definition name="fmsupplier" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/factorymethod/maintainSuppForm.jsp" />
+    </definition>
+    <definition name="fmproduct" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/factorymethod/maintainProdForm.jsp" />
+    </definition>
+    <!-- FactoryMethod End -->
+    
+    <!-- Mediator Begin -->
+    <definition name="mdindex" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/mediator/selectForm.jsp" />
+    </definition>
+    <definition name="basic.ws.definition"
+        template="/WEB-INF/views/common/layout2.jsp">
+        <put-attribute name="header" value="/WEB-INF/views/common/header.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/views/common/footer.jsp" />
+    </definition>
+    <definition name="mdorder" extends="basic.ws.definition">
+        <put-attribute name="body" value="/WEB-INF/views/mediator/orderForm.jsp" />
+    </definition>
+    <definition name="mdstockin" extends="basic.ws.definition">
+        <put-attribute name="body" value="/WEB-INF/views/mediator/stockInForm.jsp" />
+    </definition>
+    <!-- Mediator End -->
 </tiles-definitions>

@@ -19,6 +19,7 @@
 					<tr>
 						<th>採購編號</th>
 						<th>客戶名稱</th>
+						<th>購買項目</th>
 						<th>總金額</th>
 					</tr>
 				</thead>
@@ -27,6 +28,24 @@
 								<tr>
 									<td>${po.poNumber}</td>
 									<td>${po.customerName}</td>
+									<td>
+										<table class="table-bordered">
+											<tr>
+												<th>商品名稱</th>
+												<th>數量</th>
+												<th>單價</th>
+												<th>小計</th>
+											</tr>
+											<c:forEach var="pod" items="${po.lineItems}">
+												<tr>
+													<td>${pod.productName}</td>
+													<td>${pod.quantity}</td>
+													<td>${pod.price}</td>
+													<td>${pod.subTotal}</td>
+												</tr>
+											</c:forEach>
+										</table>
+									</td>
 									<td align="right">${po.total}</td>
 								</tr>
 							</c:forEach>
