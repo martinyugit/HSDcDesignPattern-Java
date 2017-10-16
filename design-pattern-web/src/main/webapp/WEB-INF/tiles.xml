@@ -130,4 +130,11 @@
         <put-attribute name="body" value="/WEB-INF/views/mediator/stockInForm.jsp" />
     </definition>
     <!-- Mediator End -->
+    
+    <!-- Facade Begin -->
+    <definition name="fcindex" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/facade/index.jsp" />
+    </definition>
+    <!-- Facade End -->
+    
 </tiles-definitions>
