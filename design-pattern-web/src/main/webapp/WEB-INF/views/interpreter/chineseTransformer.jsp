@@ -20,6 +20,8 @@
 <div id="result" style="display:none">
 </div>
 		</div>
+		<img src="${pageContext.request.contextPath }/resources/image/Interpreter_UML_class_diagram.png">
+		<img src="${pageContext.request.contextPath }/resources/image/W3sDesign_Interpreter_Design_Pattern_UML.jpg">
 	</div>
 </div>
 

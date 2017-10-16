@@ -23,6 +23,7 @@
 <br />
 <button id="genId">產生編號</button>
 		</div>
+		<img src="${pageContext.request.contextPath }/resources/image/500px-Singleton_UML_class_diagram.png">
 	</div>
 </div>
 
