@@ -22,7 +22,10 @@
 			<br />
 			<div id="result" style="display:none"></div>
 		</div>
+		
+		<hr>
 		<img src="${pageContext.request.contextPath }/resources/image/AdapterDiagram.png">
+		
 		<hr>
 		[Object Adapter pattern]
 		<br>

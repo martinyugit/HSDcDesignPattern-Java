@@ -40,6 +40,7 @@
 			<div id="result" style="display:none"></div>
 		</div>
 		
+		<hr>
 		<img src="${pageContext.request.contextPath }/resources/image/Memento-1.jpg">
 		<hr>
 		<img src="${pageContext.request.contextPath }/resources/image/Memento_Client.png">

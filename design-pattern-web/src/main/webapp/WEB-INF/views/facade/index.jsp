@@ -18,6 +18,8 @@
 			<br />
 			<div id="result" style="display:none"></div>
 		</div>
+		
+		<hr>
 		<img src="${pageContext.request.contextPath }/resources/image/Example_of_Facade_design_pattern_in_UML.png">
 		<img src="${pageContext.request.contextPath }/resources/image/W3sDesign_Facade_Design_Pattern_UML.jpg">
 	</div>

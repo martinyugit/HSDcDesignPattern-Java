@@ -5,8 +5,8 @@ import java.util.List;
 import java.util.Random;
 
 public class Lotto {
-	private String number; //4星號碼array
-	
+	private String number; //一區
+
 	public String getNumber() {
 		return number;
 	}
@@ -20,7 +20,7 @@ public class Lotto {
 	}
 	
 	public void setMemento(Memento mem) {
-		number = mem.getLotto().getNumber();
+		this.number = mem.getLotto().getNumber();
 	}
 	
 //	private java.util.Random rndGenerator = new java.util.Random();
