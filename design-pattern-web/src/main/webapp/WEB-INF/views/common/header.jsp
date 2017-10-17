@@ -20,6 +20,7 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Creational Pattern</a>
             <ul class="dropdown-menu">
+              <li><a href="${pageContext.request.contextPath }/at">Abstract Pattern</a></li>
               <li><a href="${pageContext.request.contextPath }/bd">Builder Pattern</a></li>
               <li><a href="${pageContext.request.contextPath }/fm">Factory Method Pattern</a></li>
               <li><a href="${pageContext.request.contextPath }/pt">Prototype Pattern</a></li>
@@ -30,22 +31,29 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Strutural Pattern</a>
             <ul class="dropdown-menu">
+              <li><a href="${pageContext.request.contextPath }/ad">Adapter Pattern</a></li>
               <li><a href="${pageContext.request.contextPath }/bg">Bridge Pattern</a></li>
               <li><a href="${pageContext.request.contextPath }/cp">Composite Pattern</a></li>
               <li><a href="${pageContext.request.contextPath }/dec">Decorator Pattern</a></li>
               <li><a href="${pageContext.request.contextPath }/fc">Facade Pattern</a></li>
               <li><a href="${pageContext.request.contextPath }/fw">Flyweight Pattern</a></li>
-              
+              <li><a href="${pageContext.request.contextPath }/px">Proxy Pattern</a></li>
             </ul>
           </li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Behavioural Pattern</a>
             <ul class="dropdown-menu">
+              <li><a href="${pageContext.request.contextPath }/cor">Chain of Responsibility Pattern</a></li>
               <li><a href="${pageContext.request.contextPath }/cmd">Command Pattern</a></li>
-              <li><a href="${pageContext.request.contextPath }/it">Interpreter Pattern</a></li>
-              <li><a href="#">Iterator Pattern</a></li>
+              <li><a href="${pageContext.request.contextPath }/itp">Interpreter Pattern</a></li>
+              <li><a href="${pageContext.request.contextPath }/itr">Iterator Pattern</a></li>
               <li><a href="${pageContext.request.contextPath }/md">Mediator Pattern</a></li>
+              <li><a href="${pageContext.request.contextPath }/mem">Memento Pattern</a></li>
+              <li><a href="${pageContext.request.contextPath }/os">Observer Pattern</a></li>
+              <li><a href="${pageContext.request.contextPath }/sta">State Pattern</a></li>
+              <li><a href="${pageContext.request.contextPath }/stg">Strategy Pattern</a></li>
               <li><a href="${pageContext.request.contextPath }/tm">Template Method Pattern</a></li>
+              <li><a href="${pageContext.request.contextPath }/vt">Visitor Method Pattern</a></li>
               
             </ul>
           </li>

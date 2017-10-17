@@ -12,13 +12,13 @@ import com.hsdc.dp.intf.service.interpreter.MoneyUco;
 
 @Controller
 public class InterpreterController {
-	@RequestMapping(value = "/it", method = RequestMethod.GET)
+	@RequestMapping(value = "/itp", method = RequestMethod.GET)
 	public String index() {
 		return "itindex";
 	}
 	
 	@Autowired private MoneyUco uco;
-	@RequestMapping(value = "/it/toch", method = RequestMethod.GET, produces="text/html;charset=UTF-8")
+	@RequestMapping(value = "/itp/toch", method = RequestMethod.GET, produces="text/html;charset=UTF-8")
 	public @ResponseBody String transfer(@RequestParam(value="number") long number) {
 		MoneyContext context = new MoneyContext(number);
 		context = uco.transferToChinese(context, null);
