@@ -23,7 +23,8 @@
 <br />
 <button id="genId">產生編號</button>
 		</div>
-		<img src="${pageContext.request.contextPath }/resources/image/500px-Singleton_UML_class_diagram.png">
+		<img src="${pageContext.request.contextPath }/resources/image/Singleton-Pattern-UML.gif">
+		<img src="${pageContext.request.contextPath }/resources/image/design-pattern-singleton-pattern-6-638.jpg">
 	</div>
 </div>
 

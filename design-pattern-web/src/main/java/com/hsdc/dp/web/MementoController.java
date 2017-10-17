@@ -1,7 +1,5 @@
 package com.hsdc.dp.web;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,12 +15,13 @@ import com.hsdc.dp.intf.service.memento.LottoUco;
 @SessionScope
 public class MementoController {
 	
+	@Autowired private LottoUco uco;
+
 	@RequestMapping(value = "/mem", method = RequestMethod.GET)
 	public String index(Model model) {
 		return "memindex";
 	}
 	
-	@Autowired private LottoUco uco;
 	@RequestMapping(value = "/mem/computerSelNum", method = RequestMethod.GET, produces="text/html;charset=UTF-8")
 	public @ResponseBody String computerSelNum() {
 		return uco.computerSelNum();

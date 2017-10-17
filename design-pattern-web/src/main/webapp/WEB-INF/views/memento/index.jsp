@@ -39,7 +39,10 @@
 			<br />
 			<div id="result" style="display:none"></div>
 		</div>
+		
 		<img src="${pageContext.request.contextPath }/resources/image/Memento-1.jpg">
+		<hr>
+		<img src="${pageContext.request.contextPath }/resources/image/Memento_Client.png">
 	</div>
 </div>
 
@@ -96,8 +99,6 @@ function getList(){
         error: function(data) {
         }
     });
-    
-    $("#doUpdate").prop("disabled", true);
 }
 
 function getNumber(){
@@ -122,8 +123,10 @@ $("#doAppend").click(function () {
         success: function (data) {},
         error: function(data) {}
     });
-    getList();
-    $("#doUpdate").disabled = !true;
+
+    getList();    
+    $("#doUpdate").prop("disabled", true);
+    setNumber('00,00,00,00,00,00,00');
 });
 
 function doDelete(idx){
@@ -137,7 +140,9 @@ function doDelete(idx){
 	   success: function (data) {},
 	   error: function(data) {}
 	});
+	
 	getList();
+	$("#doUpdate").prop("disabled", true);
 }
 
 var restoreNum;
@@ -154,8 +159,7 @@ function doRestore(idx){
 	   error: function(data) {}
 	});
 	
-	getList();
-	
+	getList();	
 	$("#doUpdate").prop("disabled", false);
 }
 
@@ -170,6 +174,7 @@ $("#doUpdate").click(function () {
 		   success: function (data) {},
 		   error: function(data) {}
 	});
+	
 	getList();
 });
 

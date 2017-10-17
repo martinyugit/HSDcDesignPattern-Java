@@ -23,6 +23,17 @@
 			<div id="result" style="display:none"></div>
 		</div>
 		<img src="${pageContext.request.contextPath }/resources/image/AdapterDiagram.png">
+		<hr>
+		[Object Adapter pattern]
+		<br>
+		<img src="${pageContext.request.contextPath }/resources/image/300px-ObjectAdapter.png">
+		<img src="${pageContext.request.contextPath }/resources/image/500px-Adapter(Object)_pattern_in_LePUS3.png">
+
+		<hr>
+		[Class Adapter pattern]
+		<br>
+		<img src="${pageContext.request.contextPath }/resources/image/300px-ClassAdapter.png">
+		<img src="${pageContext.request.contextPath }/resources/image/500px-Adapter(Class)_pattern_in_LePUS3.png">
 	</div>
 </div>
 
