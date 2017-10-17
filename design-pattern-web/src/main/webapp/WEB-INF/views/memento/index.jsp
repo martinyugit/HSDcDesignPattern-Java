@@ -84,8 +84,8 @@ function getList(){
             div.empty();
             var html = '';
             for(var i=0; i<data.length-1; i++){
-            	html += '<p>'
-            	html += data[i];
+            	html += '<p>(' + (i+1) + ')'
+            	html += '&nbsp;&nbsp;&nbsp;' + data[i];
             	html += '&nbsp;<button onclick="doDelete(' + i + ')">刪除</button>';
             	html += '&nbsp;<button onclick="doRestore(' + i + ')">修改</button>';
             	html += '</p>';
