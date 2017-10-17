@@ -21,6 +21,7 @@
 <div id="policyList" style="display:none">
 </div>
 		</div>
+		<img src="${pageContext.request.contextPath }/resources/image/templatemethod.jpg">
 	</div>
 </div>
 

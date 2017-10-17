@@ -143,4 +143,10 @@
     </definition>
     <!-- Memento End -->
 
+    <!-- Adapter Begin -->
+    <definition name="adindex" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/adapter/index.jsp" />
+    </definition>
+    <!-- Adapter End -->
+
 </tiles-definitions>

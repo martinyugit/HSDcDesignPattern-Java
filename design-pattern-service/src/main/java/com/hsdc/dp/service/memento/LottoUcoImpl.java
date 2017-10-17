@@ -11,8 +11,7 @@ public class LottoUcoImpl implements LottoUco {
 	
 	//電腦選號
 	public String computerSelNum() {
-		Lotto lotto = new Lotto();
-		return lotto.computerSelNum();
+		return Lotto.computerSelNum();
 	}
 
 	//下注
@@ -21,7 +20,6 @@ public class LottoUcoImpl implements LottoUco {
 		lotto.setNumber(number);
 		careTaker.setMemento(-1, lotto.createMemento());
 	}
-
 
 	//還原
 	public String doRestore(int i) {
@@ -49,5 +47,4 @@ public class LottoUcoImpl implements LottoUco {
 		lotto.setNumber(num);
 		careTaker.setMemento(idx, lotto.createMemento());
 	}
-
 }

@@ -26,7 +26,7 @@ public class Lotto {
 //	private java.util.Random rndGenerator = new java.util.Random();
 //	public final static int NUMBER_OF_VALUES_1_AREA = 37;
 //	public final static int NUMBER_OF_VALUES_2_AREA = 7;
-	public String computerSelNum() {
+	static public String computerSelNum() {
 		List<String> number = new ArrayList<String>();
 		while(number.size()<6) {
 			String num = String.format("%02d", getRandomNumberInRange(1, 38));
