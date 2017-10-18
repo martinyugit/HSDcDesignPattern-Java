@@ -149,4 +149,10 @@
     </definition>
     <!-- Adapter End -->
 
+    <!-- Proxy Begin -->
+    <definition name="pxindex" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/proxy/index.jsp" />
+    </definition>
+    <!-- Proxy End -->
+
 </tiles-definitions>
