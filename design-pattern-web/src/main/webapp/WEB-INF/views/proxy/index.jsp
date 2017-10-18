@@ -23,6 +23,7 @@
 		
 		<hr>
 		<img src="${pageContext.request.contextPath }/resources/image/Proxy1.svg">
+		<img src="${pageContext.request.contextPath }/resources/image/Proxy_example1.svg">
 	</div>
 </div>
 
