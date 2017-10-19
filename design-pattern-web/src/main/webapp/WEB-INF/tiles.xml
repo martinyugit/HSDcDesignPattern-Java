@@ -155,4 +155,17 @@
     </definition>
     <!-- Proxy End -->
 
+    <!-- Iterator Begin -->
+    <definition name="itrindex" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/iterator/index.jsp" />
+    </definition>
+    <!-- Iterator End -->
+
+    <!-- Chain of Responsibility Begin -->
+    <definition name="corindex" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/cor/index.jsp" />
+    </definition>
+    <!-- Chain of Responsibility End -->
+
+
 </tiles-definitions>

@@ -43,7 +43,7 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Behavioural Pattern</a>
             <ul class="dropdown-menu">
-              <li><a href="${pageContext.request.contextPath }/cor">★Chain of Responsibility Pattern</a></li>
+              <li><a href="${pageContext.request.contextPath }/cor">Chain of Responsibility Pattern</a></li>
               <li><a href="${pageContext.request.contextPath }/cmd">Command Pattern</a></li>
               <li><a href="${pageContext.request.contextPath }/itp">Interpreter Pattern</a></li>
               <li><a href="${pageContext.request.contextPath }/itr">★Iterator Pattern</a></li>

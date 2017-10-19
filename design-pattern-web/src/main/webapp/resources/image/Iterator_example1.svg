@@ -1,0 +1,66 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="404px" height="214px" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><defs/><g transform="translate(0.5,0.5)"><rect x="2" y="2" width="140" height="80" fill="#eeeeee" stroke="#555555" pointer-events="none"/><g transform="translate(2,2)"><switch><foreignObject pointer-events="all" width="140" height="80" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #555555; line-height: 14px; vertical-align: top; width: 140px; height: 80px; white-space: nowrap;"><p style="color:#555555;margin: 0px; margin-top: 4px; text-align: center;"><strong>ChannelFrequencies</strong></p><hr style="background-color: #444; height: 1px; border: 0;" /><p style="color:#555555;margin: 0px; margin-left: 4px;"> </p><hr style="background-color: #444; height: 1px; border: 0;" /><p style="color:#555555;margin: 0px; margin-left: 4px;">+methodOfTraversal()</p></div></foreignObject><text x="70" y="46" fill="#555555" text-anchor="middle" font-size="12px" font-family="Helvetica">[Object]</text></switch></g><rect x="2" y="132" width="140" height="80" fill="#eeeeee" stroke="#555555" pointer-events="none"/><g transform="translate(2,132)"><switch><foreignObject pointer-events="all" width="140" height="80" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #555555; line-height: 14px; vertical-align: top; width: 140px; height: 80px; white-space: nowrap;"><p style="color:#555555;margin: 0px; margin-top: 4px; text-align: center;"><strong>TunedChannel</strong></p><hr style="background-color: #444; height: 1px; border: 0;" /><p style="color:#555555;margin: 0px; margin-left: 4px;"> </p><hr style="background-color: #444; height: 1px; border: 0;" /><p style="color:#555555;margin: 0px; margin-left: 4px;">+methodOfTraversal()</p></div></foreignObject><text x="70" y="46" fill="#555555" text-anchor="middle" font-size="12px" font-family="Helvetica">[Object]</text></switch></g><rect x="262" y="2" width="140" height="90" fill="#eeeeee" stroke="#555555" pointer-events="none"/><g transform="translate(262,2)"><switch><foreignObject pointer-events="all" width="140" height="90" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #555555; line-height: 14px; vertical-align: top; width: 140px; height: 90px; white-space: nowrap;"><p style="color:#555555;margin: 0px; margin-top: 4px; text-align: center;"><strong>ChannelIterator</strong></p><hr style="background-color: #444; height: 1px; border: 0;" /><p style="color:#555555;margin: 0px; margin-left: 4px;"> </p><hr style="background-color: #444; height: 1px; border: 0;" /><p style="color:#555555;margin: 0px; margin-left: 4px;">+next()</p><p style="color:#555555;margin: 0px; margin-left: 4px;">+previous()</p></div></foreignObject><text x="70" y="51" fill="#555555" text-anchor="middle" font-size="12px" font-family="Helvetica">[Object]</text></switch></g><rect x="262" y="157" width="140" height="30" fill="#eeeeee" stroke="#555555" pointer-events="none"/><g transform="translate(264,165)"><switch><foreignObject pointer-events="all" width="136" height="14" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #555555; line-height: 14px; vertical-align: top; width: 136px; white-space: normal; text-align: center;">ChannelSelector</div></foreignObject><text x="68" y="13" fill="#555555" text-anchor="middle" font-size="12px" font-family="Helvetica">[Object]</text></switch></g><path d="M 72 132 L 72 90" fill="none" stroke="#555555" stroke-miterlimit="10" pointer-events="none"/><path d="M 72 83 L 76 90 L 69 90 Z" fill="none" stroke="#555555" stroke-miterlimit="10" pointer-events="none"/><path d="M 332 157 L 332 100" fill="none" stroke="#555555" stroke-miterlimit="10" pointer-events="none"/><path d="M 332 93 L 336 100 L 329 100 Z" fill="none" stroke="#555555" stroke-miterlimit="10" pointer-events="none"/><path d="M 142 165 L 260 165" fill="none" stroke="#555555" stroke-miterlimit="10" pointer-events="none"/><path d="M 246 173 L 261 165 L 246 158" fill="none" stroke="#555555" stroke-miterlimit="10" pointer-events="none"/><path d="M 262 179 L 144 179" fill="none" stroke="#555555" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 158 172 L 143 179 L 158 187" fill="none" stroke="#555555" stroke-miterlimit="10" pointer-events="none"/>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="162" y="52"
+	 width="80" height="80" viewBox="0 0 167.295 158.326" style="enable-background:new 0 0 167.295 158.326;"
+	 xml:space="preserve">
+<g>
+	<g>
+		
+			<rect x="37.311" y="18.998" transform="matrix(0.7072 0.707 -0.707 0.7072 32.8318 -35.8504)" style="fill:#535056;" width="44.772" height="5.428"/>
+		<path style="fill:#36333A;" d="M49.746,5.884c0,3.242-2.631,5.875-5.881,5.875c-3.246,0-5.879-2.633-5.879-5.875
+			C37.986,2.631,40.619,0,43.865,0C47.115,0,49.746,2.631,49.746,5.884z"/>
+	</g>
+	<g>
+		
+			<rect x="100.856" y="-0.673" transform="matrix(0.7071 0.7072 -0.7072 0.7071 45.6933 -66.8797)" style="fill:#535056;" width="5.428" height="44.77"/>
+		<path style="fill:#36333A;" d="M113.52,5.884c0,3.242,2.637,5.875,5.879,5.875c3.25,0,5.881-2.633,5.881-5.875
+			c0-3.253-2.631-5.884-5.881-5.884C116.156,0,113.52,2.631,113.52,5.884z"/>
+	</g>
+	<path style="fill:#36333A;" d="M102.705,42.971c-2.617-9.056-10.949-15.68-20.848-15.68c-9.891,0-18.225,6.624-20.844,15.68
+		H102.705z"/>
+	<g>
+		<path style="fill:#535056;" d="M151.514,126.758c0,7.992-6.48,14.473-14.473,14.473H29.393c-7.99,0-14.473-6.48-14.473-14.473
+			V54.39c0-7.997,6.482-14.475,14.473-14.475h107.648c7.992,0,14.473,6.478,14.473,14.475V126.758z"/>
+		<path style="fill:#424143;" d="M137.041,142.262H29.393c-8.551,0-15.506-6.955-15.506-15.504V54.39
+			c0-8.55,6.955-15.507,15.506-15.507h107.648c8.551,0,15.506,6.957,15.506,15.507v72.369
+			C152.547,135.307,145.592,142.262,137.041,142.262z M29.393,40.947c-7.412,0-13.441,6.031-13.441,13.443v72.369
+			c0,7.41,6.029,13.439,13.441,13.439h107.648c7.41,0,13.441-6.029,13.441-13.439V54.39c0-7.412-6.031-13.443-13.441-13.443H29.393z
+			"/>
+	</g>
+	<path style="fill:#E2E0CE;" d="M123.045,115.291c0,8.915-7.223,16.142-16.137,16.142H42.336c-8.91,0-16.139-7.227-16.139-16.142
+		V65.859c0-8.915,7.229-16.143,16.139-16.143h64.572c8.914,0,16.137,7.228,16.137,16.143V115.291z"/>
+	<g>
+		<path style="fill:#C3C1B1;" d="M144.582,74.333c0,4.661-3.779,8.443-8.445,8.443c-4.664,0-8.443-3.782-8.443-8.443
+			c0-4.667,3.779-8.445,8.443-8.445C140.803,65.888,144.582,69.666,144.582,74.333z"/>
+		<path style="fill:#36333A;" d="M136.137,83.68c-5.156,0-9.348-4.192-9.348-9.347c0-5.155,4.191-9.35,9.348-9.35
+			s9.35,4.194,9.35,9.35C145.486,79.488,141.293,83.68,136.137,83.68z M136.137,66.792c-4.158,0-7.539,3.383-7.539,7.541
+			c0,4.157,3.381,7.539,7.539,7.539s7.541-3.382,7.541-7.539C143.678,70.175,140.295,66.792,136.137,66.792z"/>
+	</g>
+	<g>
+		<path style="fill:#C3C1B1;" d="M144.582,97.254c0,4.657-3.779,8.439-8.445,8.439c-4.664,0-8.443-3.782-8.443-8.439
+			c0-4.665,3.779-8.449,8.443-8.449C140.803,88.805,144.582,92.589,144.582,97.254z"/>
+		<path style="fill:#36333A;" d="M136.137,106.598c-5.156,0-9.348-4.191-9.348-9.344c0-5.158,4.191-9.354,9.348-9.354
+			s9.35,4.195,9.35,9.354C145.486,102.407,141.293,106.598,136.137,106.598z M136.137,89.709c-4.158,0-7.539,3.385-7.539,7.545
+			c0,4.154,3.381,7.535,7.539,7.535s7.541-3.381,7.541-7.535C143.678,93.094,140.295,89.709,136.137,89.709z"/>
+	</g>
+	<path style="fill:#CFCDC0;" d="M106.908,49.716H73.725v81.716h33.184c8.914,0,16.137-7.227,16.137-16.142V65.859
+		C123.045,56.944,115.822,49.716,106.908,49.716z"/>
+	<path style="fill:#36333A;" d="M106.908,133.498H42.336c-10.037,0-18.203-8.167-18.203-18.207V65.859
+		c0-10.04,8.166-18.208,18.203-18.208h64.572c10.035,0,18.201,8.168,18.201,18.208v49.432
+		C125.109,125.331,116.943,133.498,106.908,133.498z M42.336,51.781c-7.76,0-14.074,6.316-14.074,14.078v49.432
+		c0,7.763,6.314,14.078,14.074,14.078h64.572c7.76,0,14.074-6.315,14.074-14.078V65.859c0-7.762-6.314-14.078-14.074-14.078H42.336z
+		"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+</g></svg>
