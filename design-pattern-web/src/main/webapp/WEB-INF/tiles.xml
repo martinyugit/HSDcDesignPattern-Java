@@ -167,4 +167,10 @@
     </definition>
     <!-- Chain of Responsibility End -->
 
+    <!-- Strategy Begin -->
+    <definition name="stgindex" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/strategy/index.jsp" />
+    </definition>
+    <!-- Strategy End -->
+
 </tiles-definitions>
