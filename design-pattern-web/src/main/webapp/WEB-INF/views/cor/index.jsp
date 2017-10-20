@@ -25,16 +25,22 @@
 
 <script>
 $("#doAction").click(function () {
+    var inputdata = { inputNum: $("#inputNum").val() };
     $.ajax({
         type: 'GET',
-        url: '${pageContext.request.contextPath }/cor/inputNum/'+$('#inputNum').val(),
+        url: '${pageContext.request.contextPath }/cor/doaction/' + $("#inputNum").val(),
         datatype: 'application/json',
+        //data: inputdata,
         async: false,
         success: function (data) {
-            var div = $('#result');
+            var div = $("#result");
             div.empty();
-            div.append('data.result');
+            var html = "<p>" + data.replace(/\n/g, '<br>') + "</p>";
+            div.append(html);
             div.show();
+        },
+        error: function(data) {
+        	alert('[error]:' + data);
         }
     });
 });

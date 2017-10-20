@@ -1,14 +1,20 @@
 package com.hsdc.dp.web;
 
+import java.util.Calendar;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.hsdc.dp.intf.service.cor.HandlerUco;
+import com.hsdc.dp.intf.service.facade.ServiceUco;
+import com.hsdc.dp.service.singleton.IDGeneratorSingleton;
+import com.hsdc.dp.web.dto.SingletonStringResponse;
 
 @Controller
 public class ChainOfResponsibilityController {
@@ -19,10 +25,11 @@ public class ChainOfResponsibilityController {
 	}
 
 	@Autowired private HandlerUco uco;
-	@RequestMapping(value = "/cor/inputNum/{inputNum}", method = RequestMethod.GET, produces = "application/json")
-	public @ResponseBody String action(@PathVariable int inputNum) {
-		String out = uco.execute(inputNum);
+	@RequestMapping(value = "/cor/doaction/{inputNum}", method = RequestMethod.GET, produces="text/html;charset=UTF-8")
+	public @ResponseBody String doAction(@PathVariable String inputNum) {
+		String out = uco.execute(Integer.valueOf(inputNum).intValue());
 		System.out.println(out);
 		return out;
 	}
+
 }
