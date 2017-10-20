@@ -8,24 +8,12 @@
 	<div class="row">
 		<div class="span12">
 			<h2></h2>
-			請輸入Handler個數:
-		    <select id="handlerNum">
-		        <option>1</option>
-		        <option>2</option>
-		        <option>3</option>
-		        <option>4</option>
-		        <option>5</option>
-		        <option>6</option>
-		        <option>7</option>
-		        <option>8</option>
-		        <option>9</option>
-		        <option>10</option>
-		    </select>
-		    
-		    <br/>
+			輸入金額:
+		    <input id="inputNum">
+		    &nbsp;
 			<button id="doAction">執行</button>
 			
-			<br />
+			<br/>
 			<div id="result" style="display:none"></div>
 		</div>
 		
@@ -39,11 +27,14 @@
 $("#doAction").click(function () {
     $.ajax({
         type: 'GET',
-        url: '${pageContext.request.contextPath }/cor/handlerNum/'+$('#handlerNum').val(),
+        url: '${pageContext.request.contextPath }/cor/inputNum/'+$('#inputNum').val(),
         datatype: 'application/json',
         async: false,
         success: function (data) {
-            $("#result").val(data.response);
+            var div = $('#result');
+            div.empty();
+            div.append('data.result');
+            div.show();
         }
     });
 });

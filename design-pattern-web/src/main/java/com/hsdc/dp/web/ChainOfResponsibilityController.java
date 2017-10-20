@@ -19,8 +19,10 @@ public class ChainOfResponsibilityController {
 	}
 
 	@Autowired private HandlerUco uco;
-	@RequestMapping(value = "/cor/handlerNum/{handlerNum}", method = RequestMethod.GET, produces = "application/json")
-	public @ResponseBody String action(@PathVariable int handlerNum) {
-		return uco.execute(handlerNum);
+	@RequestMapping(value = "/cor/inputNum/{inputNum}", method = RequestMethod.GET, produces = "application/json")
+	public @ResponseBody String action(@PathVariable int inputNum) {
+		String out = uco.execute(inputNum);
+		System.out.println(out);
+		return out;
 	}
 }

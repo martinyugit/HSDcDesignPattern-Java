@@ -9,21 +9,16 @@ public class HandlerUcoImpl implements HandlerUco {
 
 	public String execute(int handlerNum) {
 
-        System.out.println("----------------------------------------------");
+        Handler rootChain = new Handler(1000);
+        rootChain.add(new Handler(500));
+        rootChain.add(new Handler(100));
+        rootChain.add(new Handler(50));
+        rootChain.add(new Handler(10));
+        rootChain.add(new Handler(5));
+        rootChain.add(new Handler(1));
+//        rootChain.wrapAround(rootChain);
 
-        Handler rootChain = new Handler("ID-0");
-		for(int i=1; i<handlerNum; i++ ) {
-	        rootChain.add(new Handler("ID-" + String.valueOf(i)));
-		}
-        rootChain.wrapAround(rootChain);
-
-        for (int i = 1; i <= handlerNum; i++) {
-            System.out.println("Operation #" + i + ":");
-            rootChain.execute(i);
-            System.out.println();
-        }
-		
-        return null;
+        return rootChain.execute(handlerNum);
 	}
 
 }
