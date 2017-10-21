@@ -51,7 +51,7 @@
               <li><a href="${pageContext.request.contextPath }/mem">Memento Pattern</a></li>
               <li><a href="${pageContext.request.contextPath }/os">★Observer Pattern</a></li>
               <li><a href="${pageContext.request.contextPath }/sta">State Pattern</a></li>
-              <li><a href="${pageContext.request.contextPath }/stg">★Strategy Pattern</a></li>
+              <li><a href="${pageContext.request.contextPath }/stg">Strategy Pattern</a></li>
               <li><a href="${pageContext.request.contextPath }/tm">Template Method Pattern</a></li>
               <li><a href="${pageContext.request.contextPath }/vt">★Visitor Pattern</a></li>
               
