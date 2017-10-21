@@ -8,10 +8,16 @@
 	<div class="row">
 		<div class="span12">
 			<h2></h2>
-			輸入金額:
-		    <input id="inputNum">
+			輸入(Strategy):
+			<br/>
+			<select id="inputStrategy" multiple="multiple">
+				<option>FOO</option>
+				<option>BAR</option>
+				<option>FOO</option>
+				<option>BAR</option>
+			</select>
 		    &nbsp;
-			<button id="doAction">執行</button>
+			<button id="execute">執行</button>
 			
 			<br/>
 			<div id="result" style="display:none"></div>
@@ -26,11 +32,11 @@
 </div>
 
 <script>
-$("#doAction").click(function () {
-    var inputdata = { inputStr: $("#inputStr").val() };
+$("#execute").click(function () {
+    //var inputdata = { inputStrategy: $("#inputStrategy").val() };
     $.ajax({
         type: 'GET',
-        url: '${pageContext.request.contextPath }/stg/doaction/' + $("#inputStr").val(),
+        url: '${pageContext.request.contextPath }/stg/execute/' + $("#inputStrategy").val(),
         datatype: 'application/json',
         //data: inputdata,
         async: false,

@@ -1,7 +1,5 @@
 package com.hsdc.dp.intf.service.memento;
 
-import java.util.List;
-
 public interface LottoUco {
 	String computerSelNum();
 
