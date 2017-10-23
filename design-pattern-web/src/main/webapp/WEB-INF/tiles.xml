@@ -173,4 +173,10 @@
     </definition>
     <!-- Strategy End -->
 
+    <!-- Visitor Begin -->
+    <definition name="vtindex" extends="basic.definition">
+        <put-attribute name="body" value="/WEB-INF/views/visitor/index.jsp" />
+    </definition>
+    <!-- Visitor End -->
+
 </tiles-definitions>

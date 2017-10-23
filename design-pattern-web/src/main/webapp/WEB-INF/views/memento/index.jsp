@@ -41,7 +41,7 @@
 		</div>
 		
 		<hr>
-		<img src="${pageContext.request.contextPath }/resources/image/Memento-1.jpg">
+		<img src="${pageContext.request.contextPath }/resources/image/Memento.svg">
 		<hr>
 		<img src="${pageContext.request.contextPath }/resources/image/Memento_Client.png">
 	</div>
