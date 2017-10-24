@@ -7,39 +7,46 @@
 <div class="container">
 	<div class="row">
 		<div class="span12">
-			<h2>威力彩</h2>
-			<table>
-			    <tr>
-			        <th>請輸入獎號:</th>
-			        <td>
-			        	<button id="doComputerSelNum">電腦選號</button>
-			        	<button id="doAppend">下注</button>
-			        	<button id="doUpdate" disabled>修改</button>
-			        </td>
-			    </tr>
-			</table>
+			<h2></h2>
+			輸入(Visitor):
+			<br/>
+			<select id="inputVisitor">
+				<option value="1">UpVisitor</option>
+				<option value="2">DownVisitor</option>
+			</select>
+		    &nbsp;
+			<button id="execute">執行</button>
 			
-			<br />
+			<br/>
 			<div id="result" style="display:none"></div>
 		</div>
 		
 		<hr>
+		<img src="${pageContext.request.contextPath }/resources/image/Visitor1.svg">
+		<br><br>
 		<img src="${pageContext.request.contextPath }/resources/image/Visitor_example1.svg">
 	</div>
 </div>
 
 <script>
-$("#doUpdate").click(function () {
-    var inputdata = { inputIdx: restoreNum, inputNum: getNumber()};
-	$.ajax({
-		   type: 'GET',
-		   url: '${pageContext.request.contextPath }/mem/update',
-		   datatype: 'application/json',
-		   data: inputdata,
-		   async: false,
-		   success: function (data) {},
-		   error: function(data) {}
-	});
-	getList();
+$("#execute").click(function () {
+    //var inputdata = { inputVisitor: $("#inputVisitor").val() };
+    $.ajax({
+        type: 'GET',
+        url: '${pageContext.request.contextPath }/vt/execute/' + $("#inputVisitor").val(),
+        datatype: 'application/json',
+        //data: inputdata,
+        async: false,
+        success: function (data) {
+            var div = $("#result");
+            div.empty();
+            var html = "<p>" + data + "</p>";
+            div.append(html);
+            div.show();
+        },
+        error: function(data) {
+        	alert('[error]:' + data);
+        }
+    });
 });
 </script>

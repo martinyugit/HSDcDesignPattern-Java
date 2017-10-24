@@ -53,7 +53,7 @@
               <li><a href="${pageContext.request.contextPath }/sta">State Pattern</a></li>
               <li><a href="${pageContext.request.contextPath }/stg">Strategy Pattern</a></li>
               <li><a href="${pageContext.request.contextPath }/tm">Template Method Pattern</a></li>
-              <li><a href="${pageContext.request.contextPath }/vt">★Visitor Pattern</a></li>
+              <li><a href="${pageContext.request.contextPath }/vt">Visitor Pattern</a></li>
               
             </ul>
           </li>
