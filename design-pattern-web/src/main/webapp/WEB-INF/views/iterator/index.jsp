@@ -7,12 +7,12 @@
 <div class="container">
 	<div class="row">
 		<div class="span12">
-			<h2>Proxy</h2>
+			<h2>Iterator</h2>
 			<table>
 			    <tr>
 			        <th></th>
 			        <td>
-			        	<button id="doAction">確定</button>
+			        	<!-- <button id="doAction">確定</button>  -->
 			        </td>
 			    </tr>
 			</table>
