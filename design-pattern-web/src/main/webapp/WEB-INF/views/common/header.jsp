@@ -31,7 +31,7 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Strutural Pattern</a>
             <ul class="dropdown-menu">
-              <li><a href="${pageContext.request.contextPath }/ad">☆Adapter Pattern</a></li>
+              <li><a href="${pageContext.request.contextPath }/ad">Adapter Pattern</a></li>
               <li><a href="${pageContext.request.contextPath }/bg">Bridge Pattern</a></li>
               <li><a href="${pageContext.request.contextPath }/cp">Composite Pattern</a></li>
               <li><a href="${pageContext.request.contextPath }/dec">Decorator Pattern</a></li>
