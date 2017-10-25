@@ -20,7 +20,6 @@
 			<div id="result" style="display:none"></div>
 		</div>
 		
-		<hr>
 		<img src="${pageContext.request.contextPath }/resources/image/Adapter.svg">
 		<img src="${pageContext.request.contextPath }/resources/image/Adapter_example1.svg">
 		<br><br>
